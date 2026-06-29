@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Debear",
+    "slug": "debear",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#2563EB"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.debear.app"
+    },
+    "android": {
+      "package": "com.debear.app"
+    },
+    "web": {},
+    "extra": {
+      "apiUrl": "https://debear-insurance.fly.dev"
+    }
+  }
+}

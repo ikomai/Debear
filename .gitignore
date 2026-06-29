@@ -1,0 +1,33 @@
+# ─── Secrets (NEVER commit) ───
+.env
+*.local
+
+# ─── Python ───
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# ─── App data / generated ───
+bot.db
+*.sqlite3
+storage/
+debear_qr.png
+
+# ─── Tooling / binaries ───
+tools/
+.fly/
+
+# ─── Mobile (Expo / React Native) ───
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/*.log
+
+# ─── OS / editor ───
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

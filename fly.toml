@@ -1,0 +1,22 @@
+# Fly.io configuration for Debear (API + Telegram bot).
+# One image, two process groups: `web` (FastAPI) and `bot` (aiogram polling).
+app = "debear-insurance"
+primary_region = "fra"
+
+[build]
+
+[processes]
+  web = "uvicorn api.main:app --host 0.0.0.0 --port 8080"
+  bot = "python run.py"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "off"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["web"]
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
